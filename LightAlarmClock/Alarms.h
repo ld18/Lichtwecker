@@ -43,7 +43,6 @@ public:
     void addAlarm(AlarmInformation alarm);
     void deleteAlarm(AlarmInformation alarm);
     bool checkForAlarm(const time_point<high_resolution_clock, milliseconds> timePoint);
-    AlarmInformation getNextAlarm();
 private:
     bool checkAlarmTimePoint(const time_point<high_resolution_clock, milliseconds> timePoint, const AlarmInformation alarm);
     vector<AlarmInformation> alarms;

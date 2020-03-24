@@ -5,7 +5,7 @@
 #include <map>
 #include <string>
 #include <stdexcept>
-#include "TestActor.h"
+#include "Dummy_Output.h"
 
 using namespace std;
 

@@ -1,16 +1,15 @@
 
-#ifndef TESTACTOR_H
-#define TESTACTOR_H
+#ifndef DUMMY_OUTPUT_H
+#define DUMMY_OUTPUT_H
 
 #include <string>
 #include <iostream>
 
 using namespace std;
 
-
-class TestActor {
+class Dummy_Output {
 public:
-   TestActor() =default;
+   Dummy_Output() =default;
    
    static void entry_Normal(void){
        cout << "entry_Normal" << endl;
@@ -42,5 +41,5 @@ public:
 };
 
 
-#endif /* TESTACTOR_H */
+#endif /* DUMMY_OUTPUT_H */
 

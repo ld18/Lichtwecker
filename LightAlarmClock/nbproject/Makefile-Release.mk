@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/AlarmClock.o \
 	${OBJECTDIR}/Alarms.o \
 	${OBJECTDIR}/StateMachine.o \
 	${OBJECTDIR}/Timekeeper.o \
@@ -64,6 +65,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lightalarmclock.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lightalarmclock ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/AlarmClock.o: AlarmClock.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/AlarmClock.o AlarmClock.cpp
 
 ${OBJECTDIR}/Alarms.o: Alarms.cpp
 	${MKDIR} -p ${OBJECTDIR}

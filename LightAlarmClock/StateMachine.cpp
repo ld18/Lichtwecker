@@ -24,15 +24,15 @@ StateMachine::StateMachine()
             {"error", State::Error}
         };
     
-    this->stateEntryfunrctions[State::Bootup] = TestActor::entry_Bootup;
-    this->stateEntryfunrctions[State::Normal] = TestActor::entry_Normal;
-    this->stateEntryfunrctions[State::Alarm] = TestActor::entry_Alarm;
-    this->stateEntryfunrctions[State::Error] = TestActor::entry_Error;
+    this->stateEntryfunrctions[State::Bootup] = Dummy_Output::entry_Bootup;
+    this->stateEntryfunrctions[State::Normal] = Dummy_Output::entry_Normal;
+    this->stateEntryfunrctions[State::Alarm] = Dummy_Output::entry_Alarm;
+    this->stateEntryfunrctions[State::Error] = Dummy_Output::entry_Error;
     
-    this->stateExitFunctions[State::Bootup] = TestActor::exit_Bootup;
-    this->stateExitFunctions[State::Normal] = TestActor::exit_Normal;
-    this->stateExitFunctions[State::Alarm] = TestActor::exit_Alarm;
-    this->stateExitFunctions[State::Error] = TestActor::exit_Bootup;
+    this->stateExitFunctions[State::Bootup] = Dummy_Output::exit_Bootup;
+    this->stateExitFunctions[State::Normal] = Dummy_Output::exit_Normal;
+    this->stateExitFunctions[State::Alarm] = Dummy_Output::exit_Alarm;
+    this->stateExitFunctions[State::Error] = Dummy_Output::exit_Bootup;
 }
 
 void StateMachine::input(string signal) {

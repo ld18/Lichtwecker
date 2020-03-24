@@ -4,9 +4,11 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>AlarmClock.h</itemPath>
       <itemPath>Alarms.h</itemPath>
+      <itemPath>Dummy_Input.h</itemPath>
+      <itemPath>Dummy_Output.h</itemPath>
       <itemPath>StateMachine.h</itemPath>
-      <itemPath>TestActor.h</itemPath>
       <itemPath>Timekeeper.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -16,6 +18,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>AlarmClock.cpp</itemPath>
       <itemPath>Alarms.cpp</itemPath>
       <itemPath>StateMachine.cpp</itemPath>
       <itemPath>Timekeeper.cpp</itemPath>
@@ -46,15 +49,21 @@
           <standard>11</standard>
         </ccTool>
       </compileType>
+      <item path="AlarmClock.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AlarmClock.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Alarms.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Alarms.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Dummy_Input.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Dummy_Output.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="StateMachine.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="StateMachine.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="TestActor.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Timekeeper.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -84,15 +93,21 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="AlarmClock.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AlarmClock.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Alarms.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Alarms.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Dummy_Input.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Dummy_Output.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="StateMachine.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="StateMachine.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="TestActor.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Timekeeper.cpp" ex="false" tool="1" flavor2="0">
       </item>
